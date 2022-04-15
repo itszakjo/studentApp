@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".TeacherProfile">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbarmm"
+        android:background="#634975"
+        app:elevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/teacher_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="User Name adkjasd"
+                android:textSize="17sp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:textColor="#fff"/>
+
+
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <TextView
+        android:id="@+id/teacher_bio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="102dp"
+        android:paddingRight="20dp"
+        android:textSize="20dp"/>
+
+    <View
+        android:id="@+id/this_view"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/teacher_bio"
+        android:layout_width="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="0.5dp"
+        android:background="#1B000000" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:layout_below="@+id/this_view"
+        android:layout_marginTop="20dp"
+        android:id="@+id/pics_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"/>
+
+
+    <Button
+        android:id="@+id/bookNowBtn"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#fff"
+        android:text="احجز" />
+
+
+
+
+</RelativeLayout>

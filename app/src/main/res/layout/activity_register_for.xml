@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="#fff"
+
+    tools:context=".RegisterFor">
+
+
+
+    <!--    <android.support.v7.widget.Toolbar-->
+    <!--        android:id="@+id/bgHeader"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="220dp"-->
+    <!--        android:elevation="0dp" />-->
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="40dp"
+        android:text="قم بلئ المعلومات"
+        android:textColor="#46634975"
+        android:textSize="17sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDesc"
+        android:layout_alignLeft="@+id/tvDesc"
+        android:text="التسجيل لشخص آخر"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="80dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="50dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="* الاسم"
+                        android:textColor="#FF0F00"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/namereg"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/rounded_edit_text_for_login"
+                        android:layout_marginBottom="10dp"
+                        android:padding="10dp"
+
+                        android:layout_marginRight="10dp"
+                        android:inputType="text" />
+
+                    <RadioGroup
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+                        <RadioButton android:id="@+id/radioMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+
+                            android:text="ذكر"/>
+
+                        <RadioButton android:id="@+id/radioFemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="انثى"/>
+
+                    </RadioGroup>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+
+                        android:text=" *  العنواان"
+                        android:textColor="#FF0F00"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/addressReg"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/rounded_edit_text_for_login"
+                        android:padding="10dp"
+
+                        android:layout_marginRight="10dp"
+                        android:inputType="text" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Home phone"
+                        android:textColor="#FF0F00"
+                        android:textSize="14sp"
+                        android:visibility="gone"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/homePhoneReg"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/rounded_edit_text_for_login"
+                        android:padding="10dp"
+                        android:visibility="gone"
+                        android:layout_marginRight="10dp"
+                        android:inputType="phone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="الموبايل"
+                        android:textColor="#FF0F00"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/studentPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="10dp"
+                        android:visibility="visible"
+                        android:background="@drawable/rounded_edit_text_for_login"
+                        android:inputType="phone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="الايميل"
+                        android:textColor="#FF0F00"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/Email"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="10dp"
+
+                        android:background="@drawable/rounded_edit_text_for_login"
+
+                        android:inputType="text" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Password"
+                        android:textColor="#FF0F00"
+                        android:textSize="14sp"
+                        android:visibility="gone"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/passwordreg"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/rounded_edit_text_for_login"
+                        android:padding="10dp"
+
+                        android:visibility="gone"
+                        android:layout_marginRight="10dp"
+                        android:inputType="textPassword" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="    التواصل   "
+                        android:textColor="#FF0F00"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/socialLink"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/rounded_edit_text_for_login"
+                        android:inputType="text" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text=" المدرسة"
+                        android:textColor="#FF0F00"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/school"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/rounded_edit_text_for_login"
+                        android:inputType="text" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="  ولي الأمر  "
+                        android:textColor="#FF0F00"
+                        android:textSize="14sp"
+                        android:visibility="gone"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/parentName"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        android:visibility="gone"
+                        android:background="@drawable/rounded_edit_text_for_login"
+                        android:layout_marginRight="10dp"
+                        android:inputType="text"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Parent Job"
+                        android:textColor="#FF0F00"
+                        android:textSize="14sp"
+                        android:visibility="gone"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/parentJob"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        android:visibility="gone"
+                        android:background="@drawable/rounded_edit_text_for_login"
+                        android:layout_marginRight="10dp"
+                        android:inputType="text"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="* ولي الامر  "
+                        android:textColor="#FF0F00"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/parentPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        android:background="@drawable/rounded_edit_text_for_login"
+                        android:layout_marginRight="10dp"
+                        android:inputType="phone"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Parent Relation"
+                        android:textColor="#FF0F00"
+                        android:textSize="14sp"
+                        android:visibility="gone"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/parentRelation"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        android:visibility="gone"
+                        android:background="@drawable/rounded_edit_text_for_login"
+                        android:layout_marginRight="10dp"
+                        android:inputType="text"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Notes"
+                        android:textColor="#FF0F00"
+                        android:textSize="14sp"
+                        android:visibility="gone"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/notes"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        android:visibility="gone"
+                        android:background="@drawable/rounded_edit_text_for_login"
+                        android:layout_marginRight="10dp"
+                        android:inputType="text"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cv"
+                android:layout_alignLeft="@+id/cv"
+                android:layout_alignRight="@+id/cv"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginRight="35dp"
+                android:elevation="10dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="التسجيل"
+                    android:id="@+id/register"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="#fff"/>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

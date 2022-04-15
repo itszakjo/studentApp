@@ -1,0 +1,1 @@
+package zakjo.studentsapp.model;public class Average  {    public String average ;    public Average() {    }    public Average(String average) {        this.average = average;    }    public String getAverage() {        return average;    }    public void setAverage(String average) {        this.average = average;    }}

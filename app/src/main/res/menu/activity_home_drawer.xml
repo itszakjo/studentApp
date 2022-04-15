@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/askTeacherM"
+            android:title=" اسأل استاذ " />
+
+        <item
+            android:id="@+id/my_attendence"
+            android:title=" الغياب" />
+
+        <item
+            android:id="@+id/my_score"
+            android:title="  الدرجات " />
+
+
+        <item
+            android:id="@+id/groupRegisterRequests"
+            android:title="  طلبات التسجيل" />
+
+        <item
+            android:id="@+id/alreadyRegisteredGroups"
+            android:title="  المجموعات" />
+
+        <item
+            android:visible="false"
+            android:id="@+id/teachersToChat"
+            android:title="  Teachers" />
+
+
+        <item
+            android:id="@+id/singup_for_someone"
+            android:title=" سجل لصديق    " />
+
+        <item
+            android:id="@+id/platform"
+            android:title="   الدخول للمنصة    " />
+
+        <item
+            android:id="@+id/privacy_page"
+            android:title="  سياسة الخصوصية    " />
+
+
+    </group>
+
+
+
+
+
+</menu>
+
+
+
+
+

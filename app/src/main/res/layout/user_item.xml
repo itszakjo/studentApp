@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:layout_marginTop="0dp"
+    android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:id="@+id/userPic"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:layout_marginTop="5dp"/>
+
+    <ImageView
+        android:id="@+id/img_online"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="60dp"
+        android:visibility="gone"
+        android:background="@drawable/ovalon"/>
+
+    <ImageView
+        android:id="@+id/img_offline"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="60dp"
+
+        android:background="@drawable/ovaloff" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="15dp"
+        android:text="name"
+        android:textColor="#000"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/lastMessage"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="45dp"
+        android:maxLines="1"
+        android:textColor="#46000000"
+        android:text="empty message"
+        android:textSize="15dp"
+        android:layout_marginRight="50dp"/>
+
+
+    <TextView
+        android:id="@+id/msg_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="19dp"
+        android:layout_marginRight="0dp"
+        android:text="15:00 AM"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:textColor="#46000000"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/unseen_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:text="2"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:visibility="gone"
+
+        android:background="@drawable/oval"
+        android:textColor="#fff"
+        android:textSize="10sp" />
+
+
+    <View
+        android:layout_marginTop="82dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="80dp"
+        android:layout_height="0.5dp"
+        android:background="#1E000000" />
+
+
+
+</RelativeLayout>

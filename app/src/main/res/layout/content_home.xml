@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Home"
+    android:background="#fff"
+    android:padding="15dp"
+    android:layout_margin="10dp"
+    tools:showIn="@layout/app_bar_home">
+
+
+<!--    <android.support.v7.widget.Toolbar-->
+<!--            android:id="@+id/bgHeader"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="220dp"-->
+<!--            android:elevation="5dp" />-->
+
+
+
+
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/logout"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_marginRight="15dp"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:textColor="#FF0F00"-->
+<!--        android:layout_marginTop="41dp"-->
+
+<!--        app:srcCompat="@drawable/ic_exit_to_app_black_24dp"-->
+<!--        android:textSize="15sp" />-->
+
+
+
+    <TextView
+
+        android:id="@+id/zew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="18dp"
+        android:text="روزيل"
+        android:textColor="#634975"
+        android:textSize="50dp" />
+
+
+    <TextView
+
+        android:id="@+id/belText"
+        android:layout_below="@+id/zew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="84dp"
+        android:text="ابدأ باختيار مدينتك"
+        android:textColor="#46634975"
+        android:textSize="15dp" />
+
+
+    <ScrollView
+        android:layout_below="@+id/belText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="80dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="50dp">
+
+
+                    <Spinner
+                        android:id="@+id/govSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/card_main_bg"
+                        android:dropDownWidth="match_parent"
+                        android:popupBackground="@drawable/card_main_bg" />
+
+
+                    <Spinner
+                        android:id="@+id/CitiesSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/card_main_bg"
+                        android:dropDownWidth="match_parent"
+                        android:popupBackground="@drawable/card_main_bg" />
+
+                    <Spinner
+                        android:id="@+id/levelSpinner"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="50dp"
+                        android:layout_alignParentTop="true"
+
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/card_main_bg"
+                        android:dropDownWidth="match_parent"
+                        android:popupBackground="@drawable/card_main_bg" />
+
+                    <Spinner
+                        android:id="@+id/subjectSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/card_main_bg"
+                        android:dropDownWidth="match_parent"
+                        android:popupBackground="@drawable/card_main_bg" />
+
+<!--                    <Spinner-->
+<!--                        android:id="@+id/teacherSpinner"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_alignParentTop="true"-->
+<!--                        android:layout_marginBottom="20dp"-->
+<!--                        android:background="@drawable/card_main_bg"-->
+<!--                        android:dropDownWidth="match_parent"-->
+<!--                        android:popupBackground="@drawable/card_main_bg" />-->
+
+<!--                    <Spinner-->
+<!--                        android:id="@+id/groupSpinner"-->
+<!--                        android:layout_width="match_parent"-->
+
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_alignParentTop="true"-->
+<!--                        android:layout_marginBottom="20dp"-->
+<!--                        android:background="@drawable/card_main_bg"-->
+<!--                        android:dropDownWidth="match_parent"-->
+<!--                        android:popupBackground="@drawable/card_main_bg" />-->
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="بحث"
+                android:id="@+id/registerInGroup"
+                android:layout_alignParentBottom="true"
+                android:textAllCaps="false"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"
+                android:background="@drawable/button"
+                android:textColor="#fff"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+

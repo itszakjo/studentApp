@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "216423218352",
+    "firebase_url": "https://studentsapp-bc37b.firebaseio.com",
+    "project_id": "studentsapp-bc37b",
+    "storage_bucket": "studentsapp-bc37b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216423218352:android:36f3bf502696b46a5c8f75",
+        "android_client_info": {
+          "package_name": "zakjo.studentsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216423218352-van9gt6ed5t9cdo1hpjucp5tkrurfhc7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "zakjo.studentsapp",
+            "certificate_hash": "a97373b48719bcfd0ff802833b63001f590f48a5"
+          }
+        },
+        {
+          "client_id": "216423218352-roiinbjuadu85l0tridbcvv0k3m63p7o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0vayeqgC0omDB7EO6to9Dns7PxKQ378E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "216423218352-roiinbjuadu85l0tridbcvv0k3m63p7o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
